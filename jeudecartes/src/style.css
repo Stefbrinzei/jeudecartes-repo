@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.card {
+	border: 5px solid black;
+	width: 80px;
+	aspect-ratio: 3/3;
+	margin: 20px;
+	padding: 10px;
+	border-radius: 20px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card p {
+	font-size: 2rem;
+}
+
+#game-board {
+	display: grid;
+	width: 100vw;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+}
+
+@media screen and (width < 500px) {
+	.card {
+		width: 60px;
+	}
+
+	.card p {
+		font-size: 1.3rem;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
+
+.find {
+	background-color: lightgreen;
+}
